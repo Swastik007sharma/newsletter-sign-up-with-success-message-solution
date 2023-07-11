@@ -1,52 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" lang="en" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>
+			Frontend Mentor | Newsletter sign-up form with success message
+		</title>
 
-  <!-- Sign-up form start -->
+		<link rel="stylesheet" href="assets/fonts/Roboto-Bold.ttf" />
+		<link rel="stylesheet" href="assets/fonts/Roboto-Regular.ttf" />
+		<link rel="stylesheet" href="Scss/main.css" />
 
-  Stay updated!
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
 
-  Join 60,000+ product managers receiving monthly updates on:
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+	<body>
+		<!-- Sign-up form start -->
+		<div class="form" hidden>
+			<div class="form__image"></div>
 
-  Email address
-  email@company.com
+			<div class="form__container">
+				<h1 class="form__container__heading">Stay updated!</h1>
+				<p class="form__container__subheading">
+					Join 60,000+ product managers receiving monthly updates on:
+				</p>
+				<div class="form__container__benifits">
+					<div class="form__container__list">
+						<p>
+							<span
+								><img
+									class="form__container__list__icon"
+									src="./assets/images/icon-list.svg"
+									alt="." /></span
+							>Product discovery and building what matters
+						</p>
+						<p>
+							<span
+								><img
+									class="form__container__list__icon"
+									src="./assets/images/icon-list.svg"
+									alt="." /></span
+							>Measuring to ensure updates are a success
+						</p>
+						<p>
+							<span
+								><img
+									class="form__container__list__icon"
+									src="./assets/images/icon-list.svg"
+									alt="." /></span
+							>And much more!
+						</p>
+					</div>
+				</div>
+				<div>
+					<form action="#">
+						<div class="form__container__email">
+							<div class="form__container__email__heading">Email Address</div>
+							<div class="form__container__email__error" >Valid email required</div>
+						</div>
+						<input class="form__container__input"
+							type="email"
+							name="email"
+							placeholder="email@company.com"
+						/>
+						<input class="form__container__submit"
+							type="submit"
+							value="Subscribe to monthly newsletter"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
 
-  Subscribe to monthly newsletter
+		<!-- Sign-up form end -->
 
-  <!-- Sign-up form end -->
+		<!-- Success message start -->
+		<div class="success">
+			<div class="success__image-container">
+				<img
+					src="assets/images/icon-success.svg"
+					alt="success success success"
+				/>
+			</div>
 
-  <!-- Success message start -->
+			<div>
+				<h1 class="success__heading">Thanks for subscribing!</h1>
+				<p class="success__para">
+					A confirmation email has been sent to
+					<span>ash@loremcompany.com</span>. Please open it and click
+					the button inside to confirm your subscription.
+				</p>
+        <div class="success__button">
+				<button >Dismiss message</button>
+      </div>
+			</div>
+		</div>
+		<!-- Success message end -->
 
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<!-- <div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
 </html>

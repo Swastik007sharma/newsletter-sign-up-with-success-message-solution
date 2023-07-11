@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Bold.ttf");
+    src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+
+.form {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+
+    &__image {
+        width: 100vw;
+        height: 35vh;
+        background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+        background-size: cover;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    &__container {
+        width: 85vw;
+        margin: auto;
+        font-family: Roboto;
+
+        &__heading {
+            font-weight: 800;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        &__subheading {
+            font-size: 1rem;
+            color: $secondaryColor;
+
+            &>p {
+                padding: 10px;
+            }
+        }
+
+        &__benifits {
+            font-size: 1rem;
+            width: 83vw;
+            color: $secondaryColor;
+            list-style-image: url("../assets/images/icon-list.svg");
+        }
+
+        &__list {
+            & p {
+                padding-top: 0.7rem;
+            }
+
+            &__icon {
+                width: 1.7rem;
+                padding-right: 0.7rem;
+            }
+        }
+
+        &__email {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__heading {
+                font-size: 0.8rem;
+                font-weight: 700;
+                padding-bottom: 0.5rem;
+            }
+
+            &__error {
+                font-size: 0.8rem;
+                font-weight: 700;
+                color: $primaryColor;
+            }
+        }
+
+        &__input {
+            padding: 1rem;
+            width: 85vw;
+            border-radius: 0.5rem;
+            border-color: hsl(231, 7%, 60%);
+            border-style: solid;
+        }
+        &__submit{
+            padding: 1rem;
+            background: hsl(234, 29%, 20%);
+            color: hsl(0, 0%, 100%);
+            font-weight: 700;
+            border: none;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+        }
+    }
+}
