@@ -1,0 +1,101 @@
+@include media-md {
+    body {
+        background-color: $secondaryColor;
+    }
+
+    .success {
+        background-color: white;
+        display: inherit;
+        width: 33%;
+        height: 43vh;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 25vh;
+        border-radius: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem ;
+        margin: auto;
+        visibility: hidden;
+
+        &__image-container {
+            & img{
+                width: 3rem;
+            }
+        } 
+
+        &__para {
+            font-size: 0.7rem;
+        }
+
+        &__button {
+            
+            width: 28vw;
+            margin-top: 1rem;
+
+            & input {
+                padding: 0.8rem;
+                width: 100%;
+                position: relative;
+                top: -29.5vh;
+                left: 1rem;
+                
+                &:active, &:hover{
+                    background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@include media-lg {
+    body {
+        background-color: $secondaryColor;
+    }
+
+    .success {
+        background-color: white;
+        display: inherit;
+        width: 24%;
+        height: 43vh;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 25vh;
+        border-radius: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem ;
+        margin: auto;
+        visibility: hidden;
+
+        &__image-container {
+            & img{
+                width: 3rem;
+            }
+        } 
+
+        &__para {
+            font-size: 0.7rem;
+        }
+
+        &__button {
+            
+            width: 80%;
+            margin-top: 1rem;
+
+            & input {
+                padding: 0.8rem;
+                width: 100%;
+                position: relative;
+                top: -29.5vh;
+                left: 1rem;
+                
+                &:active, &:hover{
+                    background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

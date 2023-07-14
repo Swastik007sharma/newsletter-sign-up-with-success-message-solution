@@ -69,9 +69,12 @@
             }
 
             &__error {
+                display: flex;
                 font-size: 0.8rem;
                 font-weight: 700;
                 color: $primaryColor;
+                flex-direction: row-reverse;
+                visibility: hidden;
             }
         }
 
@@ -81,7 +84,10 @@
             border-radius: 0.5rem;
             border-color: hsl(231, 7%, 60%);
             border-style: solid;
+            cursor: pointer;
+            
         }
+            
         &__submit{
             padding: 1rem;
             background: hsl(234, 29%, 20%);
@@ -90,6 +96,7 @@
             border: none;
             margin-top: 1rem;
             border-radius: 0.5rem;
+            cursor:pointer;
         }
     }
 }

@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    display: none;
+    
     &__image-container{
         & > img{
             width: 4rem;
@@ -35,11 +37,12 @@
         padding: 0.7rem;
         
         
-        & > button {
-            background-color: $secondaryColor;
+        & > input {
+            background-color: hsl(234, 29%, 20%);
             color: white;
             border-radius: 0.5rem;
             padding: 1.3rem;
+            border: none;
         }
     }
 }

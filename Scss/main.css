@@ -1,8 +1,8 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 100%;
-  box-sizing: border-box;
 }
 
 body, html {
@@ -70,9 +70,12 @@ body, html {
   padding-bottom: 0.5rem;
 }
 .form__container__email__error {
+  display: flex;
   font-size: 0.8rem;
   font-weight: 700;
   color: hsl(4, 100%, 67%);
+  flex-direction: row-reverse;
+  visibility: hidden;
 }
 .form__container__input {
   padding: 1rem;
@@ -80,6 +83,7 @@ body, html {
   border-radius: 0.5rem;
   border-color: hsl(231, 7%, 60%);
   border-style: solid;
+  cursor: pointer;
 }
 .form__container__submit {
   padding: 1rem;
@@ -89,6 +93,7 @@ body, html {
   border: none;
   margin-top: 1rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .success {
@@ -98,6 +103,7 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  display: none;
 }
 .success__image-container > img {
   width: 4rem;
@@ -126,9 +132,221 @@ body, html {
   width: 90vw;
   padding: 0.7rem;
 }
-.success__button > button {
-  background-color: hsl(235, 18%, 26%);
+.success__button > input {
+  background-color: hsl(234, 29%, 20%);
   color: white;
   border-radius: 0.5rem;
   padding: 1.3rem;
+  border: none;
+}
+
+@media screen and (min-width: 786px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+  .form {
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 17vh;
+    overflow: hidden;
+    width: 700px;
+    height: 460px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    border-radius: 1.2rem;
+    margin: auto;
+  }
+  .form__image {
+    width: 18.9rem;
+    height: 27rem;
+    border-radius: 1rem;
+    background: url("../assets/images/illustration-sign-up-desktop.svg");
+    background-size: cover;
+  }
+  .form__container {
+    width: 20rem;
+    margin: 1rem;
+    padding: 1.4rem;
+  }
+  .form__container__heading {
+    font-size: 2.5rem;
+    color: hsl(234, 29%, 20%);
+    font-weight: bold;
+    padding-top: 0;
+  }
+  .form__container__subheading {
+    font-size: 0.76rem;
+  }
+  .form__container__list {
+    font-size: 0.76rem;
+    padding-top: 1rem;
+  }
+  .form__container__list p {
+    padding: 0.2rem;
+  }
+  .form__container__list__icon {
+    width: 1.6rem;
+  }
+  .form__container__email__heading, .form__container__email__error {
+    font-size: 0.7rem;
+  }
+  .form__container__input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.7rem;
+    border-radius: 0.3rem;
+  }
+  .form__container__submit:active, .form__container__submit:hover {
+    background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
+  }
+}
+@media screen and (min-width: 1400px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+  .form {
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 17vh;
+    overflow: hidden;
+    width: 700px;
+    height: 460px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    border-radius: 1.2rem;
+    margin: auto;
+  }
+  .form__image {
+    width: 18.9rem;
+    height: 27rem;
+    border-radius: 1rem;
+    background: url("../assets/images/illustration-sign-up-desktop.svg");
+    background-size: cover;
+  }
+  .form__container {
+    width: 20rem;
+    margin: 1rem;
+    padding: 1.4rem;
+  }
+  .form__container__heading {
+    font-size: 2.5rem;
+    color: hsl(234, 29%, 20%);
+    font-weight: bold;
+    padding-top: 0;
+  }
+  .form__container__subheading {
+    font-size: 0.76rem;
+  }
+  .form__container__list {
+    font-size: 0.76rem;
+    padding-top: 1rem;
+  }
+  .form__container__list p {
+    padding: 0.2rem;
+  }
+  .form__container__list__icon {
+    width: 1.6rem;
+  }
+  .form__container__email__heading, .form__container__email__error {
+    font-size: 0.7rem;
+  }
+  .form__container__input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.7rem;
+    border-radius: 0.3rem;
+  }
+  .form__container__submit:active, .form__container__submit:hover {
+    background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
+  }
+}
+@media screen and (min-width: 786px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+  .success {
+    background-color: white;
+    display: inherit;
+    width: 33%;
+    height: 43vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 25vh;
+    border-radius: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: auto;
+    visibility: hidden;
+  }
+  .success__image-container img {
+    width: 3rem;
+  }
+  .success__para {
+    font-size: 0.7rem;
+  }
+  .success__button {
+    width: 28vw;
+    margin-top: 1rem;
+  }
+  .success__button input {
+    padding: 0.8rem;
+    width: 100%;
+    position: relative;
+    top: -29.5vh;
+    left: 1rem;
+  }
+  .success__button input:active, .success__button input:hover {
+    background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+  .success {
+    background-color: white;
+    display: inherit;
+    width: 24%;
+    height: 43vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 25vh;
+    border-radius: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: auto;
+    visibility: hidden;
+  }
+  .success__image-container img {
+    width: 3rem;
+  }
+  .success__para {
+    font-size: 0.7rem;
+  }
+  .success__button {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .success__button input {
+    padding: 0.8rem;
+    width: 100%;
+    position: relative;
+    top: -29.5vh;
+    left: 1rem;
+  }
+  .success__button input:active, .success__button input:hover {
+    background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=main.css.map */

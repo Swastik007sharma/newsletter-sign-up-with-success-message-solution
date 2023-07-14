@@ -35,7 +35,7 @@
 
 	<body>
 		<!-- Sign-up form start -->
-		<div class="form" hidden>
+		<div class="form">
 			<div class="form__image"></div>
 
 			<div class="form__container">
@@ -72,17 +72,22 @@
 					</div>
 				</div>
 				<div>
-					<form action="#">
+					<form>
 						<div class="form__container__email">
-							<div class="form__container__email__heading">Email Address</div>
-							<div class="form__container__email__error" >Valid email required</div>
+							<div class="form__container__email__heading">
+								Email Address
+							</div>
+							<div class="form__container__email__error">
+								Valid email required
+							</div>
 						</div>
-						<input class="form__container__input"
-							type="email"
+						<input
+							class="form__container__input"
 							name="email"
 							placeholder="email@company.com"
 						/>
-						<input class="form__container__submit"
+						<input
+							class="form__container__submit"
 							type="submit"
 							value="Subscribe to monthly newsletter"
 						/>
@@ -94,7 +99,7 @@
 		<!-- Sign-up form end -->
 
 		<!-- Success message start -->
-		<div class="success">
+		<div class="success" >
 			<div class="success__image-container">
 				<img
 					src="assets/images/icon-success.svg"
@@ -109,9 +114,9 @@
 					<span>ash@loremcompany.com</span>. Please open it and click
 					the button inside to confirm your subscription.
 				</p>
-        <div class="success__button">
-				<button >Dismiss message</button>
-      </div>
+				<div class="success__button">
+					<input type="button" value="Dismiss message">
+				</div>
 			</div>
 		</div>
 		<!-- Success message end -->
@@ -124,5 +129,6 @@
 				>Frontend Mentor</a
 			>. Coded by <a href="#">Your Name Here</a>.
 		</div> -->
+		<script src="js/main.js"></script>
 	</body>
 </html>
