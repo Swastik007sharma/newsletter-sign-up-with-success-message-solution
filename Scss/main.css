@@ -15,12 +15,12 @@ body, html {
   src: url("../assets/fonts/Roboto-Bold.ttf");
   src: url("../assets/fonts/Roboto-Regular.ttf");
 }
-.form {
+.newsletter {
   margin: 0;
   padding: 0;
   width: 100vw;
 }
-.form__image {
+.newsletter__image {
   width: 100vw;
   height: 35vh;
   background-image: url("../assets/images/illustration-sign-up-mobile.svg");
@@ -28,56 +28,54 @@ body, html {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
-.form__container {
+.newsletter__container {
   width: 85vw;
   margin: auto;
   font-family: Roboto;
 }
-.form__container__heading {
+.newsletter__container__heading {
   font-weight: 800;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.form__container__subheading {
+.newsletter__container__subheading {
   font-size: 1rem;
   color: hsl(235, 18%, 26%);
 }
-.form__container__subheading > p {
+.newsletter__container__subheading > p {
   padding: 10px;
 }
-.form__container__benifits {
+.newsletter__container__benifits {
   font-size: 1rem;
   width: 83vw;
   color: hsl(235, 18%, 26%);
-  list-style-image: url("../assets/images/icon-list.svg");
 }
-.form__container__list p {
+.newsletter__container__points p {
   padding-top: 0.7rem;
 }
-.form__container__list__icon {
+.newsletter__container__points__icon {
   width: 1.7rem;
   padding-right: 0.7rem;
 }
-.form__container__email {
+.newsletter__container__email {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.form__container__email__heading {
+.newsletter__container__email__heading {
   font-size: 0.8rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
 }
-.form__container__email__error {
+.newsletter__container__email__error {
   display: flex;
   font-size: 0.8rem;
   font-weight: 700;
   color: hsl(4, 100%, 67%);
   flex-direction: row-reverse;
-  visibility: hidden;
 }
-.form__container__input {
+.newsletter__container__input {
   padding: 1rem;
   width: 85vw;
   border-radius: 0.5rem;
@@ -85,7 +83,7 @@ body, html {
   border-style: solid;
   cursor: pointer;
 }
-.form__container__submit {
+.newsletter__container__submit {
   padding: 1rem;
   background: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
@@ -144,7 +142,7 @@ body, html {
   body {
     background-color: hsl(235, 18%, 26%);
   }
-  .form {
+  .newsletter {
     position: absolute;
     display: flex;
     left: 0;
@@ -160,47 +158,47 @@ body, html {
     border-radius: 1.2rem;
     margin: auto;
   }
-  .form__image {
+  .newsletter__image {
     width: 18.9rem;
     height: 27rem;
     border-radius: 1rem;
     background: url("../assets/images/illustration-sign-up-desktop.svg");
     background-size: cover;
   }
-  .form__container {
+  .newsletter__container {
     width: 20rem;
     margin: 1rem;
     padding: 1.4rem;
   }
-  .form__container__heading {
+  .newsletter__container__heading {
     font-size: 2.5rem;
     color: hsl(234, 29%, 20%);
     font-weight: bold;
     padding-top: 0;
   }
-  .form__container__subheading {
+  .newsletter__container__subheading {
     font-size: 0.76rem;
   }
-  .form__container__list {
+  .newsletter__container__points {
     font-size: 0.76rem;
     padding-top: 1rem;
   }
-  .form__container__list p {
+  .newsletter__container__points p {
     padding: 0.2rem;
   }
-  .form__container__list__icon {
+  .newsletter__container__points__icon {
     width: 1.6rem;
   }
-  .form__container__email__heading, .form__container__email__error {
+  .newsletter__container__email__heading, .newsletter__container__email__error {
     font-size: 0.7rem;
   }
-  .form__container__input {
+  .newsletter__container__input {
     width: 100%;
     height: 2.5rem;
     font-size: 0.7rem;
     border-radius: 0.3rem;
   }
-  .form__container__submit:active, .form__container__submit:hover {
+  .newsletter__container__submit:active, .newsletter__container__submit:hover {
     background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
   }
 }
@@ -208,7 +206,7 @@ body, html {
   body {
     background-color: hsl(235, 18%, 26%);
   }
-  .form {
+  .newsletter {
     position: absolute;
     display: flex;
     left: 0;
@@ -224,47 +222,47 @@ body, html {
     border-radius: 1.2rem;
     margin: auto;
   }
-  .form__image {
+  .newsletter__image {
     width: 18.9rem;
     height: 27rem;
     border-radius: 1rem;
     background: url("../assets/images/illustration-sign-up-desktop.svg");
     background-size: cover;
   }
-  .form__container {
+  .newsletter__container {
     width: 20rem;
     margin: 1rem;
     padding: 1.4rem;
   }
-  .form__container__heading {
+  .newsletter__container__heading {
     font-size: 2.5rem;
     color: hsl(234, 29%, 20%);
     font-weight: bold;
     padding-top: 0;
   }
-  .form__container__subheading {
+  .newsletter__container__subheading {
     font-size: 0.76rem;
   }
-  .form__container__list {
+  .newsletter__container__points {
     font-size: 0.76rem;
     padding-top: 1rem;
   }
-  .form__container__list p {
+  .newsletter__container__points p {
     padding: 0.2rem;
   }
-  .form__container__list__icon {
+  .newsletter__container__points__icon {
     width: 1.6rem;
   }
-  .form__container__email__heading, .form__container__email__error {
+  .newsletter__container__email__heading, .newsletter__container__email__error {
     font-size: 0.7rem;
   }
-  .form__container__input {
+  .newsletter__container__input {
     width: 100%;
     height: 2.5rem;
     font-size: 0.7rem;
     border-radius: 0.3rem;
   }
-  .form__container__submit:active, .form__container__submit:hover {
+  .newsletter__container__submit:active, .newsletter__container__submit:hover {
     background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
   }
 }

@@ -3,7 +3,7 @@
         background-color: $secondaryColor;
     }
 
-    .form {
+    .newsletter {
         position: absolute;
         display: flex;
         left: 0; 
@@ -45,7 +45,7 @@
                 font-size: 0.76rem;
             }
 
-            &__list {
+            &__points {
                 font-size: 0.76rem;
                 padding-top: 1rem;
 
@@ -85,7 +85,7 @@
         background-color: $secondaryColor;
     }
 
-    .form {
+    .newsletter {
         position: absolute;
         display: flex;
         left: 0; 
@@ -127,7 +127,7 @@
                 font-size: 0.76rem;
             }
 
-            &__list {
+            &__points {
                 font-size: 0.76rem;
                 padding-top: 1rem;
 

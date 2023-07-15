@@ -4,7 +4,7 @@
     src: url("../assets/fonts/Roboto-Regular.ttf");
 }
 
-.form {
+.newsletter {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -42,10 +42,9 @@
             font-size: 1rem;
             width: 83vw;
             color: $secondaryColor;
-            list-style-image: url("../assets/images/icon-list.svg");
         }
 
-        &__list {
+        &__points {
             & p {
                 padding-top: 0.7rem;
             }
@@ -74,7 +73,6 @@
                 font-weight: 700;
                 color: $primaryColor;
                 flex-direction: row-reverse;
-                visibility: hidden;
             }
         }
 
