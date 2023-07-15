@@ -101,7 +101,6 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  display: none;
 }
 .success__image-container > img {
   width: 4rem;
@@ -123,19 +122,24 @@ body, html {
 }
 .success__button {
   position: absolute;
-  top: 60vh;
+  top: 62vh;
   left: 1.2rem;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 90%;
   padding: 0.7rem;
 }
-.success__button > input {
+.success__button > a {
+  display: block;
   background-color: hsl(234, 29%, 20%);
   color: white;
   border-radius: 0.5rem;
   padding: 1.3rem;
   border: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: roboto;
+  width: 90%;
 }
 
 @media screen and (min-width: 786px) {
@@ -283,7 +287,6 @@ body, html {
     padding-left: 3rem;
     padding-right: 3rem;
     margin: auto;
-    visibility: hidden;
   }
   .success__image-container img {
     width: 3rem;
@@ -295,14 +298,14 @@ body, html {
     width: 28vw;
     margin-top: 1rem;
   }
-  .success__button input {
+  .success__button a {
     padding: 0.8rem;
-    width: 100%;
+    width: 90%;
     position: relative;
     top: -29.5vh;
     left: 1rem;
   }
-  .success__button input:active, .success__button input:hover {
+  .success__button a:active, .success__button a:hover {
     background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
     cursor: pointer;
   }
@@ -324,7 +327,6 @@ body, html {
     padding-left: 3rem;
     padding-right: 3rem;
     margin: auto;
-    visibility: hidden;
   }
   .success__image-container img {
     width: 3rem;
@@ -336,14 +338,14 @@ body, html {
     width: 80%;
     margin-top: 1rem;
   }
-  .success__button input {
+  .success__button a {
     padding: 0.8rem;
     width: 100%;
     position: relative;
     top: -29.5vh;
     left: 1rem;
   }
-  .success__button input:active, .success__button input:hover {
+  .success__button a:active, .success__button a:hover {
     background: linear-gradient(to right, #ff3399 0%, #ff6600 100%);
     cursor: pointer;
   }

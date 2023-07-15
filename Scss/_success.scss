@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    display: none;
     
     &__image-container{
         & > img{
@@ -29,20 +28,32 @@
     }
     &__button {
         position: absolute;
-        top: 60vh;
+        top: 62vh;
         left: 1.2rem;
         justify-content: center;
         align-items: center;
-        width: 90vw;
+        width: 90%;
         padding: 0.7rem;
         
+        & > a {
+                display: block;
+                background-color: hsl(234, 29%, 20%);
+                color: white;
+                border-radius: 0.5rem;
+                padding: 1.3rem;
+                border: none;
+                text-align: center;
+                text-decoration: none;
+                font-family: roboto;
+                width: 90%;
+            }
         
-        & > input {
-            background-color: hsl(234, 29%, 20%);
-            color: white;
-            border-radius: 0.5rem;
-            padding: 1.3rem;
-            border: none;
-        }
+        // & > input {
+        //     background-color: hsl(234, 29%, 20%);
+        //     color: white;
+        //     border-radius: 0.5rem;
+        //     padding: 1.3rem;
+        //     border: none;
+        // }
     }
 }
